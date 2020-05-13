@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 10)
+    (drawings 11)
     (tracks 105)
     (zones 0)
     (modules 9)
@@ -242,7 +242,7 @@
     (tags "solder jumper open")
     (path /5EBAE765)
     (attr virtual)
-    (fp_text reference JP1 (at 0 -1.8 90) (layer F.SilkS)
+    (fp_text reference JP1 (at 0 1.778 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value "Cut for 4" (at 0 1.9 90) (layer F.Fab)
@@ -527,6 +527,9 @@
     )
   )
 
+  (gr_text PT100Stick (at 148.717 89.027) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_text "Cut JP2 for 3/4" (at 147.828 86.36) (layer F.SilkS) (tstamp 5EBCA6C4)
     (effects (font (size 0.6 0.6) (thickness 0.15)))
   )
