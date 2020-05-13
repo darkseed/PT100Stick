@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Driver_Motor:Pololu_Breakout_A4988 A1
+L PT100stick:Pololu_Breakout_A4988 A1
 U 1 1 5EB9E565
 P 1900 2050
 F 0 "A1" H 1950 2931 50  0000 C CNN
@@ -48,7 +48,7 @@ Connection ~ 1450 1650
 Text Label 1250 2450 0    50   ~ 0
 SCK
 $Comp
-L power:GND #PWR0101
+L PT100stick:GND #PWR0101
 U 1 1 5EBA0B0B
 P 2000 2950
 F 0 "#PWR0101" H 2000 2700 50  0001 C CNN
@@ -70,7 +70,7 @@ Connection ~ 2000 2900
 Wire Wire Line
 	2000 2900 2100 2900
 $Comp
-L power:+3.3V #PWR0102
+L PT100stick:+3.3V #PWR0102
 U 1 1 5EBA1652
 P 1900 1100
 F 0 "#PWR0102" H 1900 950 50  0001 C CNN
@@ -83,7 +83,7 @@ $EndComp
 Wire Wire Line
 	1900 1100 1900 1350
 $Comp
-L dk_PMIC-Thermal-Management:MAX31865ATP_ U1
+L PT100stick:MAX31865ATP_ U1
 U 1 1 5EBA27E8
 P 5150 1700
 F 0 "U1" H 4800 2200 60  0000 C CNN
@@ -117,7 +117,7 @@ Wire Wire Line
 Wire Wire Line
 	4450 2500 4650 2500
 $Comp
-L power:GND #PWR0104
+L PT100stick:GND #PWR0104
 U 1 1 5EBA5AB3
 P 5200 2900
 F 0 "#PWR0104" H 5200 2650 50  0001 C CNN
@@ -148,17 +148,6 @@ Wire Wire Line
 Connection ~ 5200 2850
 Wire Wire Line
 	5200 2850 5250 2850
-$Comp
-L power:+3.3V #PWR0105
-U 1 1 5EBA7D45
-P 5200 900
-F 0 "#PWR0105" H 5200 750 50  0001 C CNN
-F 1 "+3.3V" H 5215 1073 50  0000 C CNN
-F 2 "" H 5200 900 50  0001 C CNN
-F 3 "" H 5200 900 50  0001 C CNN
-	1    5200 900 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5200 900  5200 950 
 Wire Wire Line
@@ -185,7 +174,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 1800 4650 1800
 $Comp
-L Device:R_Small_US R1
+L PT100stick:R_Small_US R1
 U 1 1 5EBADD3B
 P 4250 1700
 F 0 "R1" H 4183 1654 50  0000 R CNN
@@ -207,7 +196,7 @@ RTDIN+
 Text Label 5900 1900 2    50   ~ 0
 FORCE+
 $Comp
-L Device:C_Small C1
+L PT100stick:C_Small C1
 U 1 1 5EBB292B
 P 2950 2100
 F 0 "C1" H 3042 2146 50  0000 L CNN
@@ -218,23 +207,23 @@ F 3 "~" H 2950 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Bridged JP1
+L PT100stick:SolderJumper_2_Bridged JP1
 U 1 1 5EBAE765
 P 2650 2250
 F 0 "JP1" H 2650 2025 50  0000 C CNN
 F 1 "Cut for 4" H 2650 2116 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2650 2250 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 2650 2250 50  0001 C CNN
 F 3 "~" H 2650 2250 50  0001 C CNN
 	1    2650 2250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Bridged JP2
+L PT100stick:SolderJumper_2_Bridged JP2
 U 1 1 5EBB06B7
 P 2650 1950
 F 0 "JP2" H 2650 2155 50  0000 C CNN
 F 1 "Cut for 3/4" H 2650 2064 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2650 1950 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 2650 1950 50  0001 C CNN
 F 3 "~" H 2650 1950 50  0001 C CNN
 	1    2650 1950
 	1    0    0    -1  
@@ -330,44 +319,22 @@ RTDIN-
 Text Label 4350 2200 0    50   ~ 0
 FORCE-
 $Comp
-L Device:C_Small C2
+L PT100stick:C_Small C2
 U 1 1 5EC2A459
-P 6000 1050
-F 0 "C2" H 6092 1096 50  0000 L CNN
-F 1 "0.1uF" H 6092 1005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6000 1050 50  0001 C CNN
-F 3 "~" H 6000 1050 50  0001 C CNN
-	1    6000 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0103
-U 1 1 5EC2B8B9
-P 6000 900
-F 0 "#PWR0103" H 6000 750 50  0001 C CNN
-F 1 "+3.3V" H 6015 1073 50  0000 C CNN
-F 2 "" H 6000 900 50  0001 C CNN
-F 3 "" H 6000 900 50  0001 C CNN
-	1    6000 900 
+P 6250 1650
+F 0 "C2" H 6342 1696 50  0000 L CNN
+F 1 "0.1uF" H 6342 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6250 1650 50  0001 C CNN
+F 3 "~" H 6250 1650 50  0001 C CNN
+	1    6250 1650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 900  6000 950 
-$Comp
-L power:GND #PWR0107
-U 1 1 5EC2E090
-P 6000 1200
-F 0 "#PWR0107" H 6000 950 50  0001 C CNN
-F 1 "GND" H 6005 1027 50  0000 C CNN
-F 2 "" H 6000 1200 50  0001 C CNN
-F 3 "" H 6000 1200 50  0001 C CNN
-	1    6000 1200
-	1    0    0    -1  
-$EndComp
+	6250 1500 6250 1550
 Wire Wire Line
-	6000 1150 6000 1200
+	6250 1750 6250 1800
 $Comp
-L Device:Ferrite_Bead_Small FB1
+L PT100stick:Ferrite_Bead_Small FB1
 U 1 1 5EC32E91
 P 5250 1150
 F 0 "FB1" H 5350 1196 50  0000 L CNN
@@ -384,4 +351,37 @@ Wire Wire Line
 Connection ~ 5200 950 
 Wire Wire Line
 	5250 1400 5250 1250
+$Comp
+L PT100stick:+3.3V #PWR?
+U 1 1 5EBCE55F
+P 5200 900
+F 0 "#PWR?" H 5200 750 50  0001 C CNN
+F 1 "+3.3V" H 5215 1073 50  0000 C CNN
+F 2 "" H 5200 900 50  0001 C CNN
+F 3 "" H 5200 900 50  0001 C CNN
+	1    5200 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PT100stick:+3.3V #PWR?
+U 1 1 5EBD5DBE
+P 6250 1500
+F 0 "#PWR?" H 6250 1350 50  0001 C CNN
+F 1 "+3.3V" H 6265 1673 50  0000 C CNN
+F 2 "" H 6250 1500 50  0001 C CNN
+F 3 "" H 6250 1500 50  0001 C CNN
+	1    6250 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PT100stick:GND #PWR?
+U 1 1 5EBD76AE
+P 6250 1800
+F 0 "#PWR?" H 6250 1550 50  0001 C CNN
+F 1 "GND" H 6255 1627 50  0000 C CNN
+F 2 "" H 6250 1800 50  0001 C CNN
+F 3 "" H 6250 1800 50  0001 C CNN
+	1    6250 1800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
