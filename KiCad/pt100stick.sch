@@ -30,9 +30,9 @@ Wire Wire Line
 	1500 2450 1250 2450
 Wire Wire Line
 	1500 2350 1250 2350
-Text Label 1250 2350 0    50   ~ 0
-MOSI
 Text Label 1250 1650 0    50   ~ 0
+MOSI
+Text Label 1250 2350 0    50   ~ 0
 MISO
 Text Label 1250 2550 0    50   ~ 0
 CS
