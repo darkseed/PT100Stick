@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 9)
-    (tracks 123)
+    (tracks 129)
     (zones 0)
     (modules 10)
     (nets 21)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.3)
+    (last_trace_width 0.25)
     (user_trace_width 0.3)
     (user_trace_width 0.4)
     (trace_clearance 0.2)
@@ -283,7 +283,7 @@
       ))
   )
 
-  (module PT100Stick:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder (layer F.Cu) (tedit 5EBC34C0) (tstamp 5EBD9D1A)
+  (module PT100Stick:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder (layer F.Cu) (tedit 5EBC34C0) (tstamp 5ECFFA5E)
     (at 145.669 73.519 270)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
@@ -668,6 +668,8 @@
   (via (at 152.527 86.868) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 5))
   (via (at 152.527 89.027) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 5))
   (segment (start 144.145 72.87) (end 145.669 74.394) (width 0.25) (layer F.Cu) (net 5) (status 30))
+  (segment (start 151.414 75.8955) (end 151.414 76.738) (width 0.25) (layer F.Cu) (net 5))
+  (segment (start 151.414 76.738) (end 151.638 76.962) (width 0.25) (layer F.Cu) (net 5))
   (segment (start 154.94 78.74) (end 154.94 76.2) (width 0.25) (layer F.Cu) (net 6) (status 30))
   (segment (start 154.559 78.359) (end 154.94 78.74) (width 0.25) (layer B.Cu) (net 6) (status 30))
   (segment (start 152.4765 74.833) (end 152.4765 75.886202) (width 0.25) (layer F.Cu) (net 6) (status 10))
@@ -759,9 +761,13 @@
   (segment (start 148.844 76.073) (end 148.844 80.679) (width 0.3) (layer F.Cu) (net 19) (status 10))
   (segment (start 148.844 80.679) (end 148.116 81.407) (width 0.3) (layer F.Cu) (net 19))
   (segment (start 148.741 71.12) (end 148.814 71.193) (width 0.25) (layer F.Cu) (net 20) (status 30))
-  (segment (start 145.909 71.12) (end 148.741 71.12) (width 0.25) (layer F.Cu) (net 20) (status 30))
   (segment (start 145.669 71.374) (end 145.923 71.12) (width 0.25) (layer F.Cu) (net 20) (status 30))
   (segment (start 145.669 72.644) (end 145.669 71.374) (width 0.25) (layer F.Cu) (net 20) (status 30))
+  (segment (start 147.124388 71.1705) (end 148.814 71.1705) (width 0.25) (layer F.Cu) (net 20))
+  (segment (start 146.412888 71.882) (end 147.124388 71.1705) (width 0.25) (layer F.Cu) (net 20))
+  (segment (start 145.669 72.644) (end 145.669 72.119) (width 0.25) (layer F.Cu) (net 20))
+  (segment (start 145.906 71.882) (end 146.412888 71.882) (width 0.25) (layer F.Cu) (net 20))
+  (segment (start 145.669 72.119) (end 145.906 71.882) (width 0.25) (layer F.Cu) (net 20))
 
   (zone (net 5) (net_name GND) (layer B.Cu) (tstamp 5EBC53E9) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
