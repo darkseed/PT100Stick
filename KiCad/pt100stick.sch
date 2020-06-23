@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L PT100stick:Pololu_Breakout_A4988 A1
-U 1 1 5EB9E565
-P 1900 2050
-F 0 "A1" H 1950 2931 50  0000 C CNN
-F 1 "Pololu_Breakout_A4988" H 1950 2840 50  0000 C CNN
-F 2 "PT100Stick:Pololu_Breakout-16_15.2x20.3mm" H 2175 1300 50  0001 L CNN
-F 3 "https://www.pololu.com/product/2980/pictures" H 2000 1750 50  0001 C CNN
-	1    1900 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1500 2550 1250 2550
 Wire Wire Line
@@ -50,25 +39,14 @@ SCK
 $Comp
 L PT100stick:GND #PWR0101
 U 1 1 5EBA0B0B
-P 2000 2950
-F 0 "#PWR0101" H 2000 2700 50  0001 C CNN
-F 1 "GND" H 2005 2777 50  0000 C CNN
-F 2 "" H 2000 2950 50  0001 C CNN
-F 3 "" H 2000 2950 50  0001 C CNN
-	1    2000 2950
+P 2100 2950
+F 0 "#PWR0101" H 2100 2700 50  0001 C CNN
+F 1 "GND" H 2105 2777 50  0000 C CNN
+F 2 "" H 2100 2950 50  0001 C CNN
+F 3 "" H 2100 2950 50  0001 C CNN
+	1    2100 2950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1900 2850 1900 2900
-Wire Wire Line
-	2100 2900 2100 2850
-Wire Wire Line
-	1900 2900 2000 2900
-Wire Wire Line
-	2000 2950 2000 2900
-Connection ~ 2000 2900
-Wire Wire Line
-	2000 2900 2100 2900
 $Comp
 L PT100stick:+3.3V #PWR0102
 U 1 1 5EBA1652
@@ -461,4 +439,17 @@ F 3 "" H 6650 1500 50  0001 C CNN
 	1    6650 1500
 	1    0    0    -1  
 $EndComp
+$Comp
+L PT100stick:Pololu_Breakout_A4988 A1
+U 1 1 5EB9E565
+P 1900 2050
+F 0 "A1" H 1950 2931 50  0000 C CNN
+F 1 "Pololu_Breakout_A4988" H 1950 2840 50  0000 C CNN
+F 2 "PT100Stick:Pololu_Breakout-16_15.2x20.3mm" H 2175 1300 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2980/pictures" H 2000 1750 50  0001 C CNN
+	1    1900 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2850 2100 2950
 $EndSCHEMATC
