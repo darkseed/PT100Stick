@@ -439,9 +439,11 @@ F 3 "" H 6650 1500 50  0001 C CNN
 	1    6650 1500
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2100 2850 2100 2950
 $Comp
 L PT100stick:Pololu_Breakout_A4988 A1
-U 1 1 5EB9E565
+U 1 1 5F07B552
 P 1900 2050
 F 0 "A1" H 1950 2931 50  0000 C CNN
 F 1 "Pololu_Breakout_A4988" H 1950 2840 50  0000 C CNN
@@ -450,6 +452,4 @@ F 3 "https://www.pololu.com/product/2980/pictures" H 2000 1750 50  0001 C CNN
 	1    1900 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2100 2850 2100 2950
 $EndSCHEMATC
